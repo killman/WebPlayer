@@ -1,5 +1,5 @@
 body.color { 
-       background: #999;
+       background:#999 url(../img/bg2.jpg) repeat-x;
      }
 .container {
 	    width: 100%;
