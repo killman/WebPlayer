@@ -1,2 +1,2 @@
-This is web player for Radio UNIX Legion.com
+This is web player for live.unixlegion.com 
 
