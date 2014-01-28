@@ -1,7 +1,19 @@
-
+body.color { 
+       background: #999;
+     }
+.container {
+	    width: 100%;
+	    position: relative;
+	    top:120px;
+	    margin:0 auto;
+	    text-align: center;
+		
+              }
 .audio-player,
 .audio-player div,
 .audio-player h1,
+.audio-player h2,
+.audio-player h3,
 .audio-player a,
 .audio-player img,
 .audio-player span,
@@ -14,8 +26,8 @@
 
 div.audio-player {
 	position: relative;
-	width: 270px;
-	height: 120px;
+	width: 520px;
+	height: 180px;
 	
 	background: #4c4e5a;
 	background: -webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
@@ -33,9 +45,29 @@ div.audio-player {
 .audio-player h1 {
 	position: absolute;
 	top: 37px;
-	left: 120px;
+	left: 180px;
+	font-family: "Lato";
+	font-weight: bold;
+	font-size: 14px;
+	color: #ececec;
+	text-shadow: 1px 1px 1px rgba(0,0,0, .5);
+}
 
-	font-family: Helvetica, Arial, sans-serif;
+.audio-player h2 {
+	position: absolute;
+	top: 110px;
+	left: 180px;
+	font-family: "Josefin Sans Std Light";
+	font-weight: bold;
+	font-size: 14px;
+	color: #ececec;
+	text-shadow: 1px 1px 1px rgba(0,0,0, .5);
+}
+.audio-player h3 {
+	position: absolute;
+	top: 130px;
+	left: 180px;
+	font-family: "Josefin Sans Std Light";
 	font-weight: bold;
 	font-size: 14px;
 	color: #ececec;
@@ -63,7 +95,7 @@ div.audio-player {
 	width: 21px;
 	height: 21px;
 	top: 35px;
-	left: 87px;
+	left: 140px;
 	background: transparent url(../img/play-pause.png) 0 0;
 }
 
@@ -75,7 +107,7 @@ div.audio-player {
 	width: 14px;
 	height: 12px;
 	top: 70px;
-	left: 90px;
+	left: 140px;
 	background: transparent url(../img/mute-unmute.png) 0 0;
 }
 
@@ -85,12 +117,12 @@ div.audio-player {
 .mejs-controls div.mejs-horizontal-volume-slider {
 	position: absolute;
 	top: 71px;
-	left: 110px;
+	left: 180px;
 	cursor: pointer;
 }
 
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
-	width: 150px;
+	width: 250px;
 	height: 8px;
 	background: #212227;
 
@@ -122,7 +154,7 @@ div.audio-player {
 .mejs-controls .mejs-time-rail span {
 	position: absolute;
 	display: block;
-	width: 270px;
+	width: 520px;
 	height: 5px;
 	left: 0;
 	bottom: 0;
@@ -145,6 +177,7 @@ div.audio-player {
 	background: #64b44c;
 }
 
+
 /* Volume Slider & Progress Bar Handle */
 .mejs-controls .mejs-time-rail .mejs-time-handle,
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle {
@@ -158,7 +191,8 @@ div.audio-player {
 
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle { top: -2px; }
 
-/* Time Float Box */
+
+/* Time Float Box */ 
 .mejs-controls .mejs-time-rail .mejs-time-float {
 	position: absolute;
 	display: none;
@@ -181,3 +215,4 @@ div.audio-player {
 	color: #666666;
 	text-align: center;
 }
+

@@ -4,13 +4,14 @@
 
 	<meta charset="utf-8">
 
-	<title>Radio UNIX Legion.com</title>
+	<title>Radio</title>
 
 	<!-- Audio Player CSS & Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/mediaelement-and-player.min.js"></script>
 	<link rel="stylesheet" href="css/style.css" media="screen">
-	<!-- end Audio Player CSS & Scripts -->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light|Lato"/>
+        <!-- end Audio Player CSS & Scripts -->
 
 	<style type="text/css">
 		html, body { margin: 0;	padding: 0; }
@@ -20,23 +21,25 @@
 <meta name="robots" content="noindex,follow" />
 </head>
 
-<body>
-
+<body class="color" >
+     <div class="container">  
 	<!-- Audio Player HTML -->
 	<div class="audio-player">
 		<h1>UNIX Legion.com</h1>
 		<img class="cover" src="img/cover.png" alt="">
-		<audio id="audio-player" src="http://live.unixlegion.com:8000/on.ogg" type="audio/ogg" controls="controls"></audio>
+		<audio preload="metadata"  id="audio-player" src="http://live.unixlegion.com/stream.ogg" type="audio/mpeg" controls autoplay></audio>
+		<h2>Radio Show Live</h2><br/>
+		<h3>Twitter: @unixlegion</h3>
 	</div>
-
+      </div>
 	<script>
 		$(document).ready(function() {
 			$('#audio-player').mediaelementplayer({
 				alwaysShowControls: true,
-				features: ['playpause','volume','progress'],
+				features: ['playpause','volume', 'volumechange'],
 				audioVolume: 'horizontal',
-				audioWidth: 270,
-				audioHeight: 120
+				audioWidth: 520,
+				audioHeight: 180,
 			});
 		});
 	</script>
