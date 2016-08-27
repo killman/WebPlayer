@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
@@ -82,4 +83,61 @@
 
   
 </body>
+=======
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Radio Show</title>
+
+	<!-- Audio Player CSS & Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light|Lato"/>
+        <!-- end Audio Player CSS & Scripts -->
+
+	<style type="text/css">
+		html, body { margin: 0;	padding: 0; }
+		body { background: #f2f2f2; }
+		.audio-player { margin: 0 auto;}
+	</style>
+<meta name="robots" content="noindex,follow" />
+</head>
+
+<body class="color" >
+     <div class="container">  
+	<!-- Audio Player HTML -->
+	<div class="audio-player">
+		<h1>UNIX Legion.com</h1>
+		<a href="http://unixlegion.com" target="_blank"><img class="cover" src="img/cover.png" alt=""></a>
+		<audio preload="metadata"  id="audio-player" src="http://live.unixlegion.com/stream.ogg" type="audio/mpeg" controls autoplay></audio>
+		<h2>Radio Show Live streaming</h2><br/>
+		<h3>Twitter: @unixlegion</h3>
+	</div>
+	<div>
+              <a data-chrome="noheader nofooter transparent" data-tweet-limit=4" class="twitter-timeline" data-dnt="true" href="https://twitter.com/unixlegion" data-widget-id="428189505372164097">Follow me: @unixlegion</a>
+	      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+	</div>
+      </div>
+	<script>
+		$(document).ready(function() {
+			$('#audio-player').mediaelementplayer({
+				alwaysShowControls: true,
+				features: ['playpause','volume', 'volumechange'],
+				audioVolume: 'horizontal',
+				audioWidth: 520,
+				audioHeight: 180,
+			});
+		});
+	</script>
+	<!-- end Audio Player HTML -->
+
+</body>
+
+>>>>>>> live
 </html>
